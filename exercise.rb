@@ -4,27 +4,16 @@
 #
 
 
-def sum(num1, num2)
-    puts num1 + num2
-    
+def get_numbers()
+    puts "What's number 1?"
+    num1 = gets.chomp.to_f
+    puts "What's number 2?"
+    num1 = gets.chomp.to_f
 end
 
-def subtract(num1, num2)
-    puts num1 - num2
-end
 
-def divide (num1, num2)
-    puts num1/num2
-end
-
-def multiply(num1, num2)
-    puts num1 * num2
-end
-
-def 
-    
 loop do
-puts "1. Sum, 2. Subtract, 3. Divide, 4.Multiply, 5. Square"
+puts "1. Sum, 2. Subtract, 3. Divide, 4.Multiply, 5. Square, q. Quit"
 
 quit = false
 until quit == true do
@@ -32,15 +21,20 @@ until quit == true do
 case choice
 
 when 1
-    sum()
+    get_numbers()
+    puts num1 + num2
 when 2
-    subtract()
+    get_numbers()
+    puts num1 - num2
 when 3
-    divide()
+    get_numbers()
+    puts num1/num2
 when 4
-    multiply()
+    get_numbers()
+    puts num1 * num2
 when 5
-    square()
+    get_numbers()
+    puts num1 ** num2
 when q
     quit = true
 
